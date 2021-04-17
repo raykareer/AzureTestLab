@@ -7,6 +7,7 @@ Invoke-Expression $($setupADusers.content)
 Remove-Item C:\Windows\System32\GroupPolicy\Machine\Scripts\Startup\startup.ps1 -Force
 }
 
+mkdir C:\Windows\System32\GroupPolicy\Machine\Scripts\Startup
 $startupScript | out-file C:\Windows\System32\GroupPolicy\Machine\Scripts\Startup\startup.ps1
 
 Restart-Computer
