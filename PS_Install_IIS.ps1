@@ -1,1 +1,1 @@
-powershell.exe Install-WindowsFeature -name Web-Server -IncludeManagementTools
+Install-WindowsFeature -name Web-Server -IncludeManagementTools
